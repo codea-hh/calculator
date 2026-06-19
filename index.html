@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taschenrechner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator">
+    <header class="display">
+      <div class="expression" id="expression" aria-hidden="true"></div>
+      <div class="result" id="result" aria-live="polite">0</div>
+    </header>
+
+    <div class="keypad">
+      <button class="key key-fn" data-action="clear">AC</button>
+      <button class="key key-fn" data-action="toggle-sign">±</button>
+      <button class="key key-fn" data-action="percent">%</button>
+      <button class="key key-op" data-action="operator" data-value="/">÷</button>
+
+      <button class="key key-num" data-action="digit" data-value="7">7</button>
+      <button class="key key-num" data-action="digit" data-value="8">8</button>
+      <button class="key key-num" data-action="digit" data-value="9">9</button>
+      <button class="key key-op" data-action="operator" data-value="*">×</button>
+
+      <button class="key key-num" data-action="digit" data-value="4">4</button>
+      <button class="key key-num" data-action="digit" data-value="5">5</button>
+      <button class="key key-num" data-action="digit" data-value="6">6</button>
+      <button class="key key-op" data-action="operator" data-value="-">−</button>
+
+      <button class="key key-num" data-action="digit" data-value="1">1</button>
+      <button class="key key-num" data-action="digit" data-value="2">2</button>
+      <button class="key key-num" data-action="digit" data-value="3">3</button>
+      <button class="key key-op" data-action="operator" data-value="+">+</button>
+
+      <button class="key key-num key-zero" data-action="digit" data-value="0">0</button>
+      <button class="key key-num" data-action="decimal">,</button>
+      <button class="key key-eq" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
