@@ -19,4 +19,4 @@ Dann im Browser: http://localhost:8765/
 
 ## Live-Demo
 
-Die App wird über GitHub Pages bereitgestellt.
+https://codea-hh.github.io/calculator/
